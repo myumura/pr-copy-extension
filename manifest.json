@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "PR Title & URL Copier",
+  "version": "1.0",
+  "description": "GitHubのPRタイトルとURLをコピーします",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
