@@ -67,7 +67,7 @@ function addCopyButton() {
       // ベースURLを構築（/files などのタブを除く）
       const baseUrl = url.split(`/${type}/${number}`)[0] + `/${type}/${number}`;
 
-      const displayText = `${repo} - ${title}`;
+      const displayText = `${repo}#${number} - ${title}`;
       const htmlContent = `<a href="${baseUrl}">${displayText}</a>`;
       const plainText = `${displayText}\n${baseUrl}`;
 
